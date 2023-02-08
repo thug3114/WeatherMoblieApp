@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/data_attribute_bg">
+
+    <TextView
+        android:id="@+id/tv_attr_name"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Tempurature"
+        android:textColor="#00FFBB"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/attribute_border"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cs_main_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:background="@drawable/value_attribute_bg">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_attr_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_attr_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="25.52"
+            android:textColor="#00FFBB"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_attr_unit"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g/m³"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_attr_value" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@drawable/add_value_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+
+                    android:paddingLeft="30dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Time:"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:paddingRight="60dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_attr_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="6-12-2001"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Type:"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    tools:ignore="NestedWeights" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/tv_attr_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="number"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="60dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
