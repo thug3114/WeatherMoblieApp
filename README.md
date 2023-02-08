@@ -13,7 +13,7 @@ Hiển thị map có các sensor
 Hiển thị thông tin chi tiết các thuộc tính
 ![image](https://user-images.githubusercontent.com/93771309/217452666-09d21e9b-38a1-4a41-9641-92a89cadbdce.png)
 
-Hiển thị chart các thuộc tính
+Hiển thị chart các thuộc tính theo thời gian
 ![image](https://user-images.githubusercontent.com/93771309/217452696-3fbbe7de-35d5-4c7a-9a37-4f937a5ffb85.png)
 
 
